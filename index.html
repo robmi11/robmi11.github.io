@@ -1,49 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
-    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <title>Robert Mizianty</title>
   </head>
   <body>
-    <img src="/avatar.jpg" alt="" width="250px" />
-    <h1>Robert Mizianty</h1>
-    <span>Programista / operator robota spawalniczego.</span>
-    <p>
-      Mam na imię Robert Mizianty. Jestem programistą / operatorem
-      zrobotyzowanego stanowiska spawalniczego. Jednak odkąd pamiętam
-      interesowałem się forntend'em.
-    </p>
-    <h2>Doświadczenie zawodowe:</h2>
-    <ul>
-      <li>
-        2013-2020 - Ślusarz / spawacz - Lavrence David Ltd. Peterborough, Wielka
-        Brytania
-      </li>
-      <li>
-        2020 - obecnie - Programista / operator zrobotyzowanego stanowiska
-        spawalniczego.
-      </li>
-    </ul>
+    <!-- Page Header -->
+    <header>
+      <div class="logo">
+        <img src="/devrob.png" alt="" />
+      </div>
 
-    <h2>Wykształcenie:</h2>
-    <ul>
-      <li>
-        1994-1999 -
-        <a href="https://ckukoszalin.edu.pl/" target="_blank"
-          >Centrum Kształcenia Ustawicznego w Koszalinie</a
-        >
-        - Technik Mechanik
-      </li>
-    </ul>
-    <h2>Zainteresowania:</h2>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Czym się zajmuję</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">o mnie</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__titile--intro">
+        Część, nazywam sie <strong>Robert Mizianty</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">frontend dev</p>
+      <img src="/devrob.jpg" alt="Robert Mizianty" />
+    </section>
+
+    <!-- What I do -->
+    <section class="services" id="services">
+      <h2 class="section__title section__title--services">Czym się zajmuję</h2>
+      <div class="services">
+        <!-- Service 1 -->
+        <div class="service">
+          <h3>HTML + CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe
+            quod nostrum quibusdam blanditiis, doloribus, laboriosam iste
+            eligendi veniam iusto ratione ea recusandae. Natus aperiam laborum
+            modi vero explicabo animi!
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service">
+          <h3>JavaScript</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
+            laudantium quaerat voluptatem voluptatibus necessitatibus facere
+            error ad, animi eius distinctio doloribus deserunt tempora,
+            aspernatur ex, enim porro. Illo, autem esse.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service">
+          <h3>Web applications - React</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            pariatur quia eligendi iusto, assumenda minima fugit nesciunt id
+            doloribus sint iste! Aperiam id ducimus rem fugiat quam
+            necessitatibus voluptate consequuntur.
+          </p>
+        </div>
+
+        <a href="#work" class="btn">Portfolio</a>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about" id="about">
+      <h2 class="section__title section__title--about"></h2>
+      <p class="section__subtitle section__subtitle--about"></p>
+      <div class="about__body">
+        <p></p>
+        <p></p>
+      </div>
+
+      <img src="/devrob_01.jpg" alt="Robert Mizianty" />
+    </section>
+
+    <!-- My work -->
+    <section class="work" id="work">
+      <h2 class="section__title"></h2>
+      <p class="section__subtitle"></p>
+
+      <!-- My work img 01 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 02 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 03 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 04 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 05 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-05jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 06 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-06.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 07 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-07.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 08 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-08.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 09 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-09.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- My work img 010 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/portfolio-10.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:robert.mizianty@gmail.com" class="footer__link"
+        >robert.mizianty@gmail.com ></a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">a</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">b</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">c</a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">d</a>
+        </li>
+      </ul>
+    </footer>
+
     <script type="module" src="/main.js" defer></script>
   </body>
 </html>
