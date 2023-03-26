@@ -8,11 +8,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/80907dc63d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Robert Mizianty</title>
   </head>
   <body>
@@ -41,15 +43,15 @@
 
     <!-- Introduction -->
     <section class="intro" id="home">
-      <h1 class="section__title section__titile--intro">
-        Część, nazywam sie <strong>Robert Mizianty</strong>
+      <h1 class="section__title section__title--intro">
+        Część, jestem <strong>Robert Mizianty</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">frontend dev</p>
-      <img src="/devrob.jpg" alt="Robert Mizianty" />
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img src="/devrob.jpg" alt="Robert Mizianty" class="intro__img" />
     </section>
 
     <!-- What I do -->
-    <section class="services" id="services">
+    <section class="my-services" id="services">
       <h2 class="section__title section__title--services">Czym się zajmuję</h2>
       <div class="services">
         <!-- Service 1 -->
@@ -84,93 +86,86 @@
             necessitatibus voluptate consequuntur.
           </p>
         </div>
-
-        <a href="#work" class="btn">Portfolio</a>
       </div>
+      <a href="#work" class="btn">Portfolio</a>
     </section>
 
     <!-- About me -->
     <section class="about" id="about">
-      <h2 class="section__title section__title--about"></h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <h2 class="section__title section__title--about">Kim jestem</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Frontend dev - Mogilno, Polska
+      </p>
       <div class="about__body">
-        <p></p>
-        <p></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          exercitationem cumque porro doloribus fugiat nemo quo sunt ducimus
+          dignissimos, nulla repudiandae est modi distinctio soluta fuga quos
+          nobis natus quam!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+          voluptate voluptatum harum, rem dolor consectetur eaque dolores itaque
+          quidem odio reiciendis totam at. Odio voluptatem, quia cumque
+          doloremque eius autem?
+        </p>
       </div>
 
-      <img src="/devrob_01.jpg" alt="Robert Mizianty" />
+      <img src="/devrob_01.jpg" alt="Robert Mizianty" class="about__img" />
     </section>
 
     <!-- My work -->
     <section class="work" id="work">
-      <h2 class="section__title"></h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">Portfolio</h2>
+      <p class="section__subtitle section__subtitle--work">Kilka moich prac</p>
 
-      <!-- My work img 01 -->
       <div class="portfolio">
+        <!-- My work img 01 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-01.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 02 -->
-      <div class="portfolio">
+        <!-- My work img 02 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-02.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 03 -->
-      <div class="portfolio">
+        <!-- My work img 03 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-03.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 04 -->
-      <div class="portfolio">
+        <!-- My work img 04 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-04.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 05 -->
-      <div class="portfolio">
+        <!-- My work img 05 -->
         <a href="#" class="portfolio__item">
-          <img src="/portfolio-05jpg" alt="" class="portfolio__img" />
+          <img src="/portfolio-05.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 06 -->
-      <div class="portfolio">
+        <!-- My work img 06 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-06.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 07 -->
-      <div class="portfolio">
+        <!-- My work img 07 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-07.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 08 -->
-      <div class="portfolio">
+        <!-- My work img 08 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-08.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 09 -->
-      <div class="portfolio">
+        <!-- My work img 09 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-09.jpg" alt="" class="portfolio__img" />
         </a>
-      </div>
 
-      <!-- My work img 010 -->
-      <div class="portfolio">
+        <!-- My work img 010 -->
         <a href="#" class="portfolio__item">
           <img src="/portfolio-10.jpg" alt="" class="portfolio__img" />
         </a>
@@ -178,22 +173,39 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer" id="footer">
       <a href="mailto:robert.mizianty@gmail.com" class="footer__link"
-        >robert.mizianty@gmail.com ></a
+        >robert.mizianty@gmail.com</a
       >
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link">a</a>
+          <a
+            href="https://github.com/robmi11"
+            target="_blank"
+            class="social-list__link"
+            ><i class="fa-brands fa-square-github fa-xl"></i
+          ></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">b</a>
+          <a
+            href="https://www.facebook.com/robert.mizianty"
+            target="_blank"
+            class="social-list__link"
+            ><i class="fa-brands fa-facebook fa-xl"></i
+          ></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">c</a>
+          <a
+            href="https://www.linkedin.com/in/robert-mizianty"
+            target="_blank"
+            class="social-list__link"
+            ><i class="fa-brands fa-linkedin fa-xl"></i
+          ></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link">d</a>
+          <a href="mailto:robert.mizianty@gmail.com" class="social-list__link"
+            ><i class="fa-solid fa-envelope fa-xl"></i
+          ></a>
         </li>
       </ul>
     </footer>
