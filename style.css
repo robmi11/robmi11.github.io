@@ -455,3 +455,15 @@ h3 { font-size: var(--fs-h3); }
 .social-list__link {
   padding: .5em;
 }
+
+/* Individual portfolio item */
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-inline: auto;
+}
