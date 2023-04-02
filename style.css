@@ -390,6 +390,7 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .portfolio__img {
+  width: 100%;
   border: 1px solid var(--clr-light);
   border-radius: 2px;
   transition: 
